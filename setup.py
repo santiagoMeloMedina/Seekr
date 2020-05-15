@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/santiagoMeloMedina/Seekr",
     packages=["seekr"],
+    install_requires=['Flask==1.1.2'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
