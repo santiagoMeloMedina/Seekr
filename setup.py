@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Seekr",
+    name="SeekrAPI",
     version="0.0.1",
     author="Santiago Melo Medina",
     author_email="santiagodevelopment001@gmail.com",
@@ -12,8 +12,8 @@ setuptools.setup(
     long_description="",
     long_description_content_type="text/markdown",
     url="https://github.com/santiagoMeloMedina/Seekr",
-    packages=["seekr"],
-    package_data={'seekr': ['data/*']},
+    packages=["seekrApi"],
+    package_data={'seekrApi': ['data/*']},
     install_requires=['Flask==1.1.2'],
     classifiers=[
         "Programming Language :: Python :: 3",

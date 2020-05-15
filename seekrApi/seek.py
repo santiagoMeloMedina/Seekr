@@ -1,8 +1,8 @@
 
-from seekr.api import API
-from seekr.endpoint import Endpoint
+from seekrApi.api import API
+from seekrApi.endpoint import Endpoint
 
-class Seekr:
+class seekrApi:
     def __init__(self, name, flask):
         self.__endpoints = []
         self.__set(flask)
