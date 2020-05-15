@@ -2,7 +2,7 @@
 from seekrApi.api import API
 from seekrApi.endpoint import Endpoint
 
-class seekrApi:
+class Seekr:
     def __init__(self, name, flask):
         self.__endpoints = []
         self.__set(flask)
