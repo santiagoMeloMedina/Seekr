@@ -3,10 +3,10 @@ from seekr.api import API
 from seekr.endpoint import Endpoint
 
 class Seekr:
-    def __init__(self, flask):
+    def __init__(self, name, flask):
         self.__endpoints = []
         self.__set(flask)
-        flask.register_blueprint(API())
+        flask.register_blueprint(API(info={"endpoint":self.__endpoints, "name": name}))
 
     def __set(self, flask):
         attr = [{"url": n.rule, "method": n.methods} for n in flask.url_map.iter_rules()]

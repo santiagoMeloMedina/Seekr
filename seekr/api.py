@@ -2,12 +2,13 @@
 from flask import Blueprint
 from seekr.data import DataService
 from seekr.render import RenderService
+from seekr.constant import ASSET
 
 class API(Blueprint):
-    def __init__(self):
-        super().__init__("seekr", __name__)
-        self.__data = DataService()
-        self.__render = RenderService()
+    def __init__(self, info=None):
+        super().__init__("seekr_unique_route", __name__, template_folder=ASSET)
+        self.__data = DataService(info)
+        self.__render = RenderService(info)
         self.__define()
 
     def __define(self):
