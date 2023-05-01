@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/santiagoMeloMedina/Seekr",
     packages=["seekrApi"],
     package_data={'seekrApi': ['data/*']},
-    install_requires=['Flask==1.1.2'],
+    install_requires=['Flask==2.3.2'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
